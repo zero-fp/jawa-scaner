@@ -1,5 +1,5 @@
-import logging
 import re
+import logging
 from collections import defaultdict
 from dataclasses import dataclass
 from enum import IntEnum

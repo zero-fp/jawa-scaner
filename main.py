@@ -12,10 +12,6 @@ import argparse
 from jawa_scanner import JawaScanner
 from json_manager import JsonExporter
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-parent_dir_path = os.path.abspath(os.path.join(dir_path, os.pardir))
-sys.path.insert(0, parent_dir_path)
-
 from deps_manager import DepsManager, rreplace
 
 

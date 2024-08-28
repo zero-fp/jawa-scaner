@@ -70,9 +70,3 @@ class JsonExporter:
             if len(new_arr['result'][className]) == 0:
                 del new_arr['result'][className]
         return new_arr
-
-
-# filter_methods = ['org.apache.logging.log4j.Logger.trace', 'org.apache.logging.log4j.Logger.debug',
-#                  'org.apache.logging.log4j.Logger.info', 'org.apache.logging.log4j.Logger.warn',
-#                  'org.apache.logging.log4j.Logger.error', 'org.apache.logging.log4j.Logger.fatal',
-#                  'org.apache.logging.log4j.Logger.log']

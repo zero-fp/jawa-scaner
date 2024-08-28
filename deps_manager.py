@@ -2,12 +2,6 @@ import logging
 import os
 import subprocess
 
-from neo4j import GraphDatabase
-
-NEO4J_URI = "bolt://127.0.0.1:7687"
-NEO4J_LOGIN = 'neo4j'  # your neo4j login here
-NEO4J_PASSWORD = '12345678'  # your neo4j password here
-
 
 def rreplace(s, old, new):
     li = s.rsplit(old, 1)
@@ -85,4 +79,3 @@ class DepsManager:
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
             logging.debug(f'Timeout for {gav}')
             return 1
-
